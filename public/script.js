@@ -72,7 +72,6 @@ const listing = () => {
         //giving each tag the bootstrap class
         a.className = 'dropdown-item';
 
-
         //adding an event listener to each animal
         a.addEventListener('click', function (e) {
             //prevent refresh
@@ -94,7 +93,11 @@ const listing = () => {
                         console.log('img url: ', data.results[5].urls.full)
                         let urlData = data.results[5].urls.full;
                         displayResults(urlData, searchTerm) 
-                                                                        
+                                                                    
+                    } else if (e.target.id === 'mountain-lion') {
+                        console.log('img url: ', 'https://images.unsplash.com/photo-1527720255604-b27935ade401?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80')
+                        let urlData = 'https://images.unsplash.com/photo-1527720255604-b27935ade401?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80';
+                        displayResults(urlData, searchTerm)
                     } else if (e.target.id === 'skunk') {
                         console.log('img url: ', 'https://images.unsplash.com/photo-1561493642-645a773b12a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80')
                         let urlData = 'https://images.unsplash.com/photo-1561493642-645a773b12a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80';
