@@ -1,14 +1,77 @@
+.animalContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-right: 20%;
+
+}
+
+#animalName { 
+    font-size: 50pt;
+    padding: 0;
+    text-align: center;
+}
+
+#animalPic {
+    height: 600px;
+    width: 800px;
+}
+
 body {
-    background: url(https://images.unsplash.com/photo-1465652044861-81e32c824058?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80);
+    background: url(./assets_apiProj_2/trail-bg.jfif);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.dropdown {
+    text-align: center;
+}
+
+#dropdownMenuButton {
+    background-color: darkred;
+    box-shadow: 0 50px 50px 0 rgba(4, 4, 4, 2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+#flag {
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 115px;
+    display: block;
 }
 
 h1 {
-    color: white;
+    color: orange;
     text-align: center;
+    font-family: 'Bungee Inline', cursive;
+    font-size: 40pt;
+    margin: 100px 0px 20px -50px;
 }
+
+#jumbotron {
+    background-color: green;
+    margin: 0px;
+    height: 700px;
+
+}
+
+
+
 
 p {
     color: white;
     text-align: center;
+    font-family: 'Zilla Slab Highlight', cursive;
+    font-size: 18pt;
+    margin: 35px;
 }
 
+#state {
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    display: block;
+}
